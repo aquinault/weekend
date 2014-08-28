@@ -7,7 +7,7 @@ require.config({
       }
     },
 	paths: {
-        jquery: 'bower_components/jquery/dist/jquery.min',
+    jquery: 'bower_components/jquery/dist/jquery.min',
 		angular: 'bower_components/angular/angular',
 		angularResource: 'bower_components/angular-resource/angular-resource',
 		angularUiRouter: 'bower_components/angular-ui-router/release/angular-ui-router',
@@ -15,7 +15,7 @@ require.config({
 		angularMocks: 'bower_components/angular-mocks/angular-mocks',
 		underscore: 'bower_components/underscore/underscore',
 		text: 'bower_components/requirejs-text/text',
-		bootstrap : 'bower_components/bootstrap/dist/js/bootstrap.min'
+		bootstrap : '../../bootstrap/dist/js/bootstrap.min'
 	},
 	shim: {
 		'angular' : {'exports' : 'angular'},
@@ -43,7 +43,7 @@ require( [
 	'bootstrap',
 	'components/app.module',
 	'underscore',
-	'css!bower_components/bootstrap/dist/css/bootstrap.min',
+	'css!../../bootstrap/dist/css/custom-bootstrap.min',
 	'css!style/navbar-fixed-top'
 ], function(angular, jquery, bootstrap, app, _, css) {
 
