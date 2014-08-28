@@ -1,0 +1,54 @@
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row" style="background-color:black;margin-left: auto;margin-right: auto;width: 100%;">
+    <a href="components/gallery/Koala.jpg" title="Koala" data-gallery>
+        <img src="components/gallery/Koala-thumb.jpg" alt="Koala" width="100%">
+    </a>
+</div>
+<div class="row" style="background-color:black;margin-left: auto;margin-right: auto;width: 100%;">
+    <a href="components/gallery/Penguins.jpg" title="Phare" data-gallery>
+        <img src="components/gallery/Phare-thumb.jpg" alt="Phare" width="100%">
+    </a>
+</div>
+    
+
+
+
+<h1 id="overview" class="page-header">About Me</h1>
+<p class="lead">Get the lowdown on the key pieces of Bootstrap's infrastructure, including our approach to better, faster, stronger web development.</p>
+

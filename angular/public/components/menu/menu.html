@@ -1,0 +1,44 @@
+<style media="screen" type="text/css">
+  .selected {
+    z-index: 10;
+  }
+</style>
+
+
+<fa-app style="width: 600px; height: 600px;">
+
+
+ 
+  <fa-modifier ng-repeat="box in boxes | orderBy:'box.index'" fa-translate="box.translate.get()"  fa-size="box.size">
+    <fa-surface fa-click="box.evt.emit('touchBox', box.name);" fa-background-color="'red'" fa-size="[undefined, undefined]"
+       ng-class="{'selected': $index==selectedIndex}">
+      <div ng-include src=" 'components/menu/b.html' "></div>
+    </fa-surface>
+  </fa-modifier>
+
+
+
+
+  <!--fa-modifier fa-translate="box.translate.get()" fa-opacity="box.opacity" fa-size="box.size">
+    <fa-surface fa-click="box.evt.emit('1', 'my message');" fa-background-color="'red'">
+      <div ng-include src=" 'components/menu/b.html' "></div>
+    </fa-surface>
+  </fa-modifier>
+
+  <fa-modifier fa-translate="box2.translate.get()" fa-size="box2.size">
+
+    <fa-image-surface
+           fa-image-url="http://pic2.pbsrc.com/common/profile_male_large.jpg"
+           fa-click="box2.evt.emit('2', 'my message');"
+           class="img"
+           fa-color="'blue'"
+           fa-background-color="'#fff'"
+           >
+    </fa-image-surface>
+
+    <fa-surface fa-background-color="'red'" fa-size="[10,10]">
+    </fa-surface>
+
+  </fa-modifier-->
+  
+</fa-app>
