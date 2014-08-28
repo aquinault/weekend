@@ -44,7 +44,8 @@ require( [
 	'components/app.module',
 	'underscore',
 	'css!../../bootstrap/dist/css/custom-bootstrap.min',
-	'css!style/navbar-fixed-top'
+	//'css!style/navbar-fixed-top',
+	'css!style/cover'
 ], function(angular, jquery, bootstrap, app, _, css) {
 
 	console.log('app : ' + app);

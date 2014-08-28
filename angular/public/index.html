@@ -1,84 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Angular Modularize</title>
 
-    </head>
-    
-    <body ng-app="app.module" style="display: none">
-    <!--body ng-app="app.module"-->
-        <div ng-include src="'components/header/header.html'"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-4 col-sm-3 col-md-2 sidebar">
-                    <ul class="nav nav-sidebar">
-                        <li class="active">
-                            <a href="#">Overview</a>
-                        </li>
-                        <li>
-                            <a href="#">Reports</a>
-                        </li>
-                        <li>
-                            <a href="#">Analytics</a>
-                        </li>
-                        <li>
-                            <a href="#">Export</a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-sidebar">
-                        <li>
-                            <a href="">Nav item</a>
-                        </li>
-                        <li>
-                            <a href="">Nav item again</a>
-                        </li>
-                        <li>
-                            <a href="">One more nav</a>
-                        </li>
-                        <li>
-                            <a href="">Another nav item</a>
-                        </li>
-                        <li>
-                            <a href="">More navigation</a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-sidebar">
-                        <li>
-                            <a href="">Nav item again</a>
-                        </li>
-                        <li>
-                            <a href="">One more nav</a>
-                        </li>
-                        <li>
-                            <a href="">Another nav item</a>
-                        </li>
-                    </ul>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week-end</title>
+
+</head>
+
+<body ng-app="app.module" style="display: none">
+
+
+
+    <div class="site-wrapper">
+
+        <div class="site-wrapper-inner">
+
+            <div class="cover-container">
+
+                <div class="masthead clearfix">
+                    <div class="inner">
+                    
+                        <h3 class="masthead-brand">
+                            <img id="quay-logo" src="style/logo-full.png" style="height:100px;">
+                        </h3>
+                        <ul class="nav masthead-nav">
+                            <li class="active"><a href="#">Login</a>
+                            </li>
+                            <li><a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-xs-8 col-sm-9 col-md-10">
-                <div ui-view></div>
-                    <!--div class="jumbotron">
-                        <div ui-view></div>
-                    </div -->
+
+                <div class="inner cover">
+                    <h1 class="cover-heading">Cover your page.</h1>
+                    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+                    <p class="lead">
+                        <a href="#" class="btn btn-lg btn-default">Learn more</a>
+                    </p>
                 </div>
+
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p>Template <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="http://www.cadesoft.com">aquinault</a>.</p>
+                    </div>
+                </div>
+
             </div>
+
         </div>
 
-        <script data-main="main" src="bower_components/requirejs/require.js"></script>
+    </div>
 
 
+    <script data-main="main" src="bower_components/requirejs/require.js"></script>
 
-        
-        <!--script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script-->
-        
-        <link rel="stylesheet" href="bower_components/blueimp-gallery/css/blueimp-gallery.min.css">
-        <link rel="stylesheet" href="bower_components/blueimp-bootstrap-image-gallery/css/bootstrap-image-gallery.min.css">
-       
-       
+    <link rel="stylesheet" href="bower_components/blueimp-gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="bower_components/blueimp-bootstrap-image-gallery/css/bootstrap-image-gallery.min.css">
 
-    </body>
+
+</body>
 
 </html>
