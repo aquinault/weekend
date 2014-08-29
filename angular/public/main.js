@@ -15,7 +15,7 @@ require.config({
 		angularMocks: 'bower_components/angular-mocks/angular-mocks',
 		underscore: 'bower_components/underscore/underscore',
 		text: 'bower_components/requirejs-text/text',
-		bootstrap : '../../bootstrap-boilerplate/bootstrap/dist/js/bootstrap.min'
+		bootstrap : 'bootstrap-boilerplate/bootstrap/dist/js/bootstrap.min'
 	},
 	shim: {
 		'angular' : {'exports' : 'angular'},
@@ -43,8 +43,8 @@ require( [
 	'bootstrap',
 	'components/app.module',
 	'underscore',
-	'css!../../bootstrap-boilerplate/css/style.min',
-	'css!../../bootstrap-boilerplate/bootstrap/dist/css/bootstrap.min',
+	'css!bootstrap-boilerplate/css/style.min',
+	'css!bootstrap-boilerplate/bootstrap/dist/css/bootstrap.min',
 	//'css!style/navbar-fixed-top',
 	'css!style/cover'
 ], function(angular, jquery, bootstrap, app, _, css) {
